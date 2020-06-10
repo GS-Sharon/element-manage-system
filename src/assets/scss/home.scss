@@ -1,0 +1,98 @@
+#home {
+    height: 100%;
+    .el-row {
+        height: 100%;
+    }
+    .left-content {
+        height: 100%;
+        text-align: left;
+        .personBox {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: solid 1px #a7a1a1;
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                margin-right: 20px;
+            }
+            .userInfo {
+                .name {
+                    font-size: 32px;
+                }
+                .role {
+                    margin-top: 10px;
+                    color: #a7a1a1;
+                    font-size: 14px;
+                }
+            }
+        }
+        .login-info {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #a7a1a1;
+            p {
+                line-height: 32px;
+                span {
+                    color: #928f8f;
+                }
+            }
+        }
+        .table {
+            /deep/.el-card__body {
+                height: 100%;
+            }
+        }
+        
+    }
+    .right-content {
+        height: 100%;
+        .numsBox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .el-card {
+                width: 32%;
+                margin-bottom: 20px;
+                /deep/.el-card__body {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 0 10px 0 0;
+                    .icon {
+                        font-size: 50px;
+                        color: #fff;
+                        width: 80px;
+                        height: 80px;
+                        line-height: 80px;
+                        margin-right: 10px;
+                    }
+                    .detail {
+                        font-size: 14px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .price {
+                            font-size: 30px;
+                            margin-bottom: 5px;
+                        }
+                        .text {
+                            color: #999;
+                        }
+                    }
+                }
+                
+            }
+        }  
+        .gragh-bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            .el-card {
+                width: 48%;
+                height: 280px;
+            }
+        }
+    }
+}
